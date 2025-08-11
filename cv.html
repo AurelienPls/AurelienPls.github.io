@@ -1,16 +1,251 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Mon Profil</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional CV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        .skill-bar { transition: width 1s ease-in-out; }
+        .parallax { background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4F46E5',
+                        secondary: '#9333EA'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
+<body class="bg-white">
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="text-2xl font-['Pacifico'] text-primary">Portfolio</a>
+                </div>
+                <div class="flex items-center space-x-8">
+                    <a href="#experience" class="text-gray-700 hover:text-primary">Experience</a>
+                    <a href="#education" class="text-gray-700 hover:text-primary">Education</a>
+                    <a href="#skills" class="text-gray-700 hover:text-primary">Skills</a>
+                    <a href="#languages" class="text-gray-700 hover:text-primary">Languages</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-    <h1>Bienvenue sur ma page !</h1>
+    <div class="pt-24 pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="bg-white/80 backdrop-blur-sm rounded-lg shadow-xl p-8 transform hover:scale-[1.02] transition-transform duration-300">
+            <h1 class="text-3xl font-bold text-gray-900 mb-4">Alexander Thompson</h1>
+            <p class="text-lg text-gray-600 leading-relaxed">
+                Innovative Full Stack Developer with 8+ years of experience crafting elegant solutions for complex technical challenges. Specialized in cloud architecture and scalable systems. Passionate about mentoring and driving technological advancement through collaborative leadership.
+            </p>
+        </div>
+    </div>
 
-    <p>Je suis un chercheur en astrophysique et en science des données. Bienvenue sur mon site personnel.</p>
+    <section id="experience" class="py-16 parallax" style="background-image: url('https://public.readdy.ai/ai/img_res/8fa77c81a90c7ad34adab881543f4b52.jpg')">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white/90 backdrop-blur-sm rounded-lg shadow-xl p-8">
+                <h2 class="text-2xl font-bold text-gray-900 mb-8">Professional Experience</h2>
+                <div class="space-y-12">
+                    <div class="flex gap-8">
+                        <div class="w-32 flex-shrink-0">
+                            <div class="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                                <i class="ri-google-fill text-2xl text-primary"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900">Senior Software Engineer</h3>
+                            <p class="text-primary font-medium">Google Cloud Platform</p>
+                            <p class="text-gray-600">2020 - Present</p>
+                            <ul class="mt-4 space-y-2 text-gray-600">
+                                <li>Led development of cloud-native applications serving 1M+ users</li>
+                                <li>Architected microservices infrastructure reducing deployment time by 60%</li>
+                                <li>Mentored 12 junior developers in best practices and system design</li>
+                            </ul>
+                        </div>
+                    </div>
 
-    <h2>Mes publications</h2>
-    <p>Vous trouverez ici la liste de mes articles de recherche.</p>
+                    <div class="flex gap-8">
+                        <div class="w-32 flex-shrink-0">
+                            <div class="h-12 w-12 rounded-lg bg-blue-100 flex items-center justify-center">
+                                <i class="ri-microsoft-fill text-2xl text-blue-500"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900">Software Development Engineer</h3>
+                            <p class="text-blue-500 font-medium">Microsoft</p>
+                            <p class="text-gray-600">2017 - 2020</p>
+                            <ul class="mt-4 space-y-2 text-gray-600">
+                                <li>Developed core features for Azure Cloud Services</li>
+                                <li>Improved system performance by 40% through optimization</li>
+                                <li>Collaborated with cross-functional teams across 3 continents</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="education" class="py-16 parallax" style="background-image: url('https://public.readdy.ai/ai/img_res/3fe044fcc4b4b45b018fd5eb87af3f65.jpg')">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white/90 backdrop-blur-sm rounded-lg shadow-xl p-8">
+                <h2 class="text-2xl font-bold text-gray-900 mb-8">Education</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white rounded-lg p-6 shadow-sm">
+                        <h3 class="text-xl font-semibold text-gray-900">Stanford University</h3>
+                        <p class="text-primary font-medium">Master of Science in Computer Science</p>
+                        <p class="text-gray-600">2015 - 2017</p>
+                        <p class="mt-4 text-gray-600">Specialization in Artificial Intelligence and Machine Learning</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-6 shadow-sm">
+                        <h3 class="text-xl font-semibold text-gray-900">MIT</h3>
+                        <p class="text-primary font-medium">Bachelor of Science in Computer Engineering</p>
+                        <p class="text-gray-600">2011 - 2015</p>
+                        <p class="mt-4 text-gray-600">Minor in Mathematics, Graduated with Honors</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-16 parallax" style="background-image: url('https://public.readdy.ai/ai/img_res/812895d795f366b0881ce4f5d618e985.jpg')">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white/90 backdrop-blur-sm rounded-lg shadow-xl p-8">
+                <h2 class="text-2xl font-bold text-gray-900 mb-8">Technical Skills</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Frontend Development</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-700">React.js</span>
+                                    <span class="text-gray-600">95%</span>
+                                </div>
+                                <div class="h-2 bg-gray-200 rounded">
+                                    <div class="h-2 bg-primary rounded skill-bar" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-700">Vue.js</span>
+                                    <span class="text-gray-600">85%</span>
+                                </div>
+                                <div class="h-2 bg-gray-200 rounded">
+                                    <div class="h-2 bg-primary rounded skill-bar" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Backend Development</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-700">Node.js</span>
+                                    <span class="text-gray-600">90%</span>
+                                </div>
+                                <div class="h-2 bg-gray-200 rounded">
+                                    <div class="h-2 bg-primary rounded skill-bar" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-700">Python</span>
+                                    <span class="text-gray-600">88%</span>
+                                </div>
+                                <div class="h-2 bg-gray-200 rounded">
+                                    <div class="h-2 bg-primary rounded skill-bar" style="width: 88%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="languages" class="py-16 parallax" style="background-image: url('https://public.readdy.ai/ai/img_res/a83c25b8f3535313835054196c4d5174.jpg')">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white/90 backdrop-blur-sm rounded-lg shadow-xl p-8">
+                <h2 class="text-2xl font-bold text-gray-900 mb-8">Languages</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg p-6 shadow-sm">
+                        <div class="flex items-center gap-4 mb-4">
+                            <i class="ri-english-input text-2xl text-primary"></i>
+                            <h3 class="text-lg font-semibold text-gray-900">English</h3>
+                        </div>
+                        <p class="text-gray-600">Native</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-6 shadow-sm">
+                        <div class="flex items-center gap-4 mb-4">
+                            <i class="ri-spain-flag-fill text-2xl text-primary"></i>
+                            <h3 class="text-lg font-semibold text-gray-900">Spanish</h3>
+                        </div>
+                        <p class="text-gray-600">Fluent (C2)</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-6 shadow-sm">
+                        <div class="flex items-center gap-4 mb-4">
+                            <i class="ri-france-flag-fill text-2xl text-primary"></i>
+                            <h3 class="text-lg font-semibold text-gray-900">French</h3>
+                        </div>
+                        <p class="text-gray-600">Intermediate (B2)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.querySelectorAll('.skill-bar').forEach(bar => {
+                        const width = bar.style.width;
+                        bar.style.width = '0';
+                        setTimeout(() => {
+                            bar.style.width = width;
+                        }, 100);
+                    });
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('#skills .bg-white').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
 </body>
 </html>
