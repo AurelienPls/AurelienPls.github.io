@@ -1,1 +1,429 @@
-# AurelienPls.github.io
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. James Wilson - Astrophysicist & Engineer</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#0A192F',
+secondary: '#64FFDA'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+.nav-link.active { color: #64FFDA; }
+.nav-link:hover { color: #64FFDA; }
+.parallax { background-attachment: fixed; }
+</style>
+</head>
+<body class="bg-primary text-gray-100 min-h-screen">
+<nav class="fixed w-full z-50 bg-black/95 backdrop-blur-sm border-b border-gray-800">
+<div class="container mx-auto px-6 py-4">
+<div class="flex items-center justify-between">
+<a href="#" class="text-2xl font-['Roboto'] text-secondary">Aurélien Piluso</a>
+<div class="hidden md:flex space-x-8">
+<a href="#home" class="nav-link active">Home</a>
+<a href="#cv" class="nav-link">CV</a>
+<a href="#sports" class="nav-link">Sports</a>
+<a href="#passions" class="nav-link">Passions</a>
+<a href="#contact" class="nav-link">Contact</a>
+</div>
+<button class="md:hidden w-10 h-10 flex items-center justify-center">
+<i class="ri-menu-line text-2xl"></i>
+</button>
+</div>
+</div>
+</nav>
+<section id="home" class="min-h-screen relative overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img src="https://public.readdy.ai/ai/img_res/7c522a0f022742ca044c9ec89ec4a756.jpg" class="w-full h-full object-cover object-center" alt="Space Background">
+<div class="absolute inset-0 bg-primary/70"></div>
+</div>
+<div class="container mx-auto px-6 relative z-10 pt-32">
+<div class="grid md:grid-cols-2 gap-12 items-center min-h-[calc(100vh-8rem)]">
+<div>
+<h1 class="text-5xl font-bold mb-6 font-['Playfair_Display']">Exploring the Cosmos Through Science & Engineering</h1>
+<p class="text-xl text-gray-300 mb-8">Astrophysicist & Aerospace Engineer specializing in exoplanetary systems and space telescope technology.</p>
+<div class="flex gap-4">
+<button class="bg-secondary text-primary px-8 py-3 rounded-button font-semibold hover:bg-opacity-90 transition-all cursor-pointer">View My Work</button>
+<button onclick="createStars()" class="border-2 border-secondary text-secondary px-8 py-3 rounded-button font-semibold hover:bg-secondary/10 transition-all cursor-pointer">Make Stars Fall</button>
+</div>
+</div>
+<div class="flex justify-center">
+<div class="relative w-80 h-80 rounded-full overflow-hidden border-4 border-secondary transform transition-all duration-300 hover:scale-110 hover:border-white hover:shadow-2xl hover:shadow-secondary/50">
+<img src="https://public.readdy.ai/ai/img_res/510fa972c363e4b752a17023d831af20.jpg" class="w-full h-full object-cover" alt="James Wilson">
+</div>
+</div>
+</div>
+</div>
+
+</section>
+<section id="sports" class="py-20 relative overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img src="https://public.readdy.ai/ai/img_res/9cec60491ec11ed58bbd83f3a6180d25.jpg" class="w-full h-full object-cover object-center" alt="Tennis Background">
+<div class="absolute inset-0 bg-black/50"></div>
+</div>
+<div class="container mx-auto px-6 relative z-10">
+
+<h2 class="text-4xl font-bold text-white mb-12 text-center font-['Playfair_Display']">Sports & Athletics</h2>
+<div class="grid md:grid-cols-3 gap-8">
+
+<div class="bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20 transform transition-all duration-300 hover:scale-105 hover:bg-white/20 hover:border-secondary">
+<h3 class="text-2xl font-bold text-white mb-4 font-['Playfair_Display']">Badminton</h3>
+<p class="text-gray-200">8 ans en club avec plusieurs compétition en équipe et en simple à mon actif</p>
+<div class="mt-6">
+<span class="text-secondary">Achievement:</span>
+<p class="text-gray-300 mt-2">Equipe qualifiée aux régionales</p>
+</div>
+</div>
+
+<div class="bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20 transform transition-all duration-300 hover:scale-105 hover:bg-white/20 hover:border-secondary">
+<h3 class="text-2xl font-bold text-white mb-4 font-['Playfair_Display']">Natation</h3>
+<p class="text-gray-200">12 ans de natation en club avec de nombreuses compétitions à mon actif</p>
+<div class="mt-6">
+<span class="text-secondary">Achievement:</span>
+<p class="text-gray-300 mt-2">Médaille d'argent régionale en 50m brasse</p>
+</div>
+</div>
+
+<div class="bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20 transform transition-all duration-300 hover:scale-105 hover:bg-white/20 hover:border-secondary">
+<h3 class="text-2xl font-bold text-white mb-4 font-['Playfair_Display']">Krav Maga</h3>
+<p class="text-gray-200">Sport de combat alliant techniques de corps à corps, saisies et boxe pied point</p>
+<span class="text-secondary">Achievement:</span>
+<p class="text-gray-300 mt-2">Ceinture Jaune</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="cv" class="py-20 relative">
+<div class="absolute inset-0 z-0">
+<img src="https://public.readdy.ai/ai/img_res/e36048b9654687dcad0fd238b6599436.jpg" class="w-full h-full object-cover object-center" alt="Office Background">
+<div class="absolute inset-0 bg-gray-50/95"></div>
+</div>
+<div class="relative z-10">
+<div class="container mx-auto px-6">
+<h2 class="text-4xl font-bold text-primary mb-12 text-center">Professional Experience</h2>
+<div class="max-w-4xl mx-auto">
+<div class="relative border-l-4 border-primary pl-8 pb-8">
+<div class="absolute w-4 h-4 bg-secondary rounded-full -left-2 mt-2"></div>
+<div class="mb-8">
+<h3 class="text-2xl font-bold text-primary">Senior Research Scientist</h3>
+<p class="text-gray-600">European Space Agency (ESA) | 2020 - Present</p>
+<p class="mt-4 text-gray-700">Leading research on exoplanetary atmospheres using the James Webb Space Telescope data analysis.</p>
+</div>
+</div>
+<div class="relative border-l-4 border-primary pl-8 pb-8">
+<div class="absolute w-4 h-4 bg-secondary rounded-full -left-2 mt-2"></div>
+<div class="mb-8">
+<h3 class="text-2xl font-bold text-primary">Research Fellow</h3>
+<p class="text-gray-600">MIT Kavli Institute | 2017 - 2020</p>
+<p class="mt-4 text-gray-700">Conducted research on space telescope optimization and developed new methodologies for deep space observation.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="passions" class="py-20 relative">
+<div class="absolute inset-0 z-0">
+<img src="https://public.readdy.ai/ai/img_res/b461149a0ed8936977cc4da9275ddf77.jpg" class="w-full h-full object-cover object-center" alt="Science Background">
+<div class="absolute inset-0 bg-white/95"></div>
+</div>
+<div class="relative z-10">
+<div class="container mx-auto px-6">
+<h2 class="text-4xl font-bold text-primary mb-12 text-center">My Passions</h2>
+<div class="mb-16">
+<h3 class="text-2xl font-bold text-primary mb-8 text-center">Recent Publications</h3>
+<div class="publication-wheel relative w-[800px] h-[800px] mx-auto">
+<div class="absolute inset-0 rounded-full border-4 border-dashed border-secondary/30"></div>
+</div>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-gray-50 rounded-lg p-6 shadow-lg">
+<div class="w-12 h-12 flex items-center justify-center mb-4">
+<i class="ri-telescope-line text-3xl text-secondary"></i>
+</div>
+<h3 class="text-xl font-bold text-primary mb-4">Astronomy</h3>
+<p class="text-gray-700">Exploring the mysteries of the universe through advanced telescopes and data analysis.</p>
+</div>
+<div class="bg-gray-50 rounded-lg p-6 shadow-lg">
+<div class="w-12 h-12 flex items-center justify-center mb-4">
+<i class="ri-rocket-line text-3xl text-secondary"></i>
+</div>
+<h3 class="text-xl font-bold text-primary mb-4">Space Engineering</h3>
+<p class="text-gray-700">Designing and developing next-generation space exploration technologies.</p>
+</div>
+<div class="bg-gray-50 rounded-lg p-6 shadow-lg">
+<div class="w-12 h-12 flex items-center justify-center mb-4">
+<i class="ri-book-open-line text-3xl text-secondary"></i>
+</div>
+<h3 class="text-xl font-bold text-primary mb-4">Research</h3>
+<p class="text-gray-700">Publishing groundbreaking research in astrophysics and space engineering.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="contact" class="py-20 relative">
+<div class="absolute inset-0 z-0">
+<img src="https://public.readdy.ai/ai/img_res/3f215713f02f53cda8c5e106d2ad9c24.jpg" class="w-full h-full object-cover object-center" alt="Contact Background">
+<div class="absolute inset-0 bg-gray-50/95"></div>
+</div>
+<div class="relative z-10">
+<div class="container mx-auto px-6">
+<h2 class="text-4xl font-bold text-primary mb-12 text-center">Get in Touch</h2>
+<div class="max-w-2xl mx-auto">
+<form class="space-y-6">
+<div>
+<label class="block text-gray-700 mb-2">Name</label>
+<input type="text" class="w-full px-4 py-2 rounded-button border border-gray-300 focus:border-secondary focus:outline-none" required>
+</div>
+<div>
+<label class="block text-gray-700 mb-2">Email</label>
+<input type="email" class="w-full px-4 py-2 rounded-button border border-gray-300 focus:border-secondary focus:outline-none" required>
+</div>
+<div>
+<label class="block text-gray-700 mb-2">Message</label>
+<textarea class="w-full px-4 py-2 rounded-button border border-gray-300 focus:border-secondary focus:outline-none h-32" required></textarea>
+</div>
+<button type="submit" class="w-full bg-primary text-white px-6 py-3 rounded-button hover:bg-opacity-90 transition-all cursor-pointer">Send Message</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<footer class="bg-primary text-white py-12">
+<div class="container mx-auto px-6">
+<div class="grid md:grid-cols-3 gap-8">
+<div>
+<h3 class="text-xl font-bold mb-4">Contact</h3>
+<p class="mb-2">European Space Agency</p>
+<p class="mb-2">Paris, France</p>
+<p>contact@jameswilson.com</p>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-4">Connect</h3>
+<div class="flex space-x-4">
+<a href="#" class="hover:text-secondary">
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-linkedin-fill"></i>
+</div>
+</a>
+<a href="#" class="hover:text-secondary">
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-twitter-fill"></i>
+</div>
+</a>
+<a href="#" class="hover:text-secondary">
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-github-fill"></i>
+</div>
+</a>
+</div>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-4">Quick Links</h3>
+<ul class="space-y-2">
+<li><a href="#home" class="hover:text-secondary">Home</a></li>
+<li><a href="#cv" class="hover:text-secondary">CV</a></li>
+<li><a href="#passions" class="hover:text-secondary">Passions</a></li>
+<li><a href="#contact" class="hover:text-secondary">Contact</a></li>
+</ul>
+</div>
+</div>
+<div class="mt-12 pt-8 border-t border-gray-700 text-center">
+<p>&copy; 2025 Dr. James Wilson. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<style>
+.publication-wheel {
+transform-style: preserve-3d;
+perspective: 1000px;
+}
+.publication-wheel > div {
+backface-visibility: hidden;
+transition: transform 0.3s ease;
+}
+.publication-wheel > div:hover {
+transform: translateZ(30px) scale(1.1);
+box-shadow: 0 10px 30px rgba(100, 255, 218, 0.2);
+border-color: #64FFDA;
+}
+.star {
+position: fixed;
+top: -20px;
+color: white;
+animation: fall linear forwards;
+}
+@keyframes fall {
+0% {
+transform: translateY(0) scale(1);
+opacity: 1;
+}
+100% {
+transform: translateY(120vh) scale(0);
+opacity: 0;
+}
+}
+</style>
+<script>
+const publications = [
+{
+title: "Quantum Entanglement in Exoplanetary Atmospheres",
+journal: "Nature Astronomy",
+year: 2025,
+pdf: "#"
+},
+{
+title: "New Methods for Deep Space Telescope Calibration",
+journal: "Astrophysical Journal",
+year: 2024,
+pdf: "#"
+},
+{
+title: "Dark Matter Distribution in Galaxy Clusters",
+journal: "Monthly Notices of the Royal Astronomical Society",
+year: 2024,
+pdf: "#"
+},
+{
+title: "Advanced Algorithms for Exoplanet Detection",
+journal: "Science",
+year: 2023,
+pdf: "#"
+},
+{
+title: "Space Telescope Engineering Innovations",
+journal: "Astronomy & Astrophysics",
+year: 2023,
+pdf: "#"
+},
+{
+title: "Gravitational Wave Detection Methods",
+journal: "Physical Review Letters",
+year: 2023,
+pdf: "#"
+}
+];
+function initPublicationWheel() {
+const wheel = document.querySelector('.publication-wheel');
+const radius = 350;
+const totalPublications = publications.length;
+publications.forEach((pub, index) => {
+const angle = (index / totalPublications) * 2 * Math.PI;
+const x = radius * Math.cos(angle) + radius;
+const y = radius * Math.sin(angle) + radius;
+const pubElement = document.createElement('div');
+pubElement.className = 'absolute transform -translate-x-1/2 -translate-y-1/2 w-64 bg-white p-4 rounded-lg shadow-lg cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl border border-gray-200';
+pubElement.style.left = `${x}px`;
+pubElement.style.top = `${y}px`;
+pubElement.innerHTML = `
+<h4 class="text-primary font-bold mb-2 line-clamp-2">${pub.title}</h4>
+<p class="text-gray-600 text-sm">${pub.journal}</p>
+<p class="text-gray-500 text-sm">${pub.year}</p>
+<div class="mt-2 flex items-center text-secondary hover:text-primary">
+<i class="ri-file-pdf-line mr-1"></i>
+<span class="text-sm">View PDF</span>
+</div>
+`;
+pubElement.addEventListener('click', () => {
+const modal = document.createElement('div');
+modal.className = 'fixed inset-0 bg-black/50 flex items-center justify-center z-50';
+modal.innerHTML = `
+<div class="bg-white rounded-lg p-6 max-w-lg w-full mx-4">
+<div class="flex justify-between items-start mb-4">
+<h3 class="text-xl font-bold text-primary">${pub.title}</h3>
+<button class="text-gray-500 hover:text-gray-700">
+<i class="ri-close-line text-2xl"></i>
+</button>
+</div>
+<div class="mb-4">
+<p class="text-gray-600">${pub.journal} (${pub.year})</p>
+</div>
+<div class="text-center">
+<p class="text-gray-500 mb-4">PDF version will open in a new tab</p>
+<button class="bg-secondary text-primary px-6 py-2 rounded-button hover:bg-opacity-90 transition-all">
+Download PDF
+</button>
+</div>
+</div>
+`;
+document.body.appendChild(modal);
+modal.querySelector('button').addEventListener('click', () => {
+modal.remove();
+});
+});
+wheel.appendChild(pubElement);
+});
+}
+function createStars() {
+const starIcons = ['ri-star-line', 'ri-star-smile-line', 'ri-star-half-line'];
+for(let i = 0; i < 50; i++) {
+setTimeout(() => {
+const star = document.createElement('i');
+star.className = `star ${starIcons[Math.floor(Math.random() * starIcons.length)]}`;
+star.style.left = Math.random() * window.innerWidth + 'px';
+star.style.fontSize = Math.random() * 10 + 15 + 'px';
+star.style.animation = `fall ${Math.random() * 2 + 2}s ease-in`;
+document.body.appendChild(star);
+star.addEventListener('animationend', () => {
+star.remove();
+});
+}, i * 100);
+}
+}
+document.addEventListener('DOMContentLoaded', function() {
+initPublicationWheel();
+const navLinks = document.querySelectorAll('.nav-link');
+const sections = document.querySelectorAll('section');
+function updateActiveLink() {
+let current = '';
+sections.forEach(section => {
+const sectionTop = section.offsetTop;
+if (window.scrollY >= sectionTop - 100) {
+current = section.getAttribute('id');
+}
+});
+navLinks.forEach(link => {
+link.classList.remove('active');
+if (link.getAttribute('href').slice(1) === current) {
+link.classList.add('active');
+}
+});
+}
+window.addEventListener('scroll', updateActiveLink);
+const form = document.querySelector('form');
+form.addEventListener('submit', function(e) {
+e.preventDefault();
+const formData = new FormData(form);
+console.log('Form submitted:', Object.fromEntries(formData));
+form.reset();
+});
+});
+</script>
+</body>
+</html>
